@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -13,70 +15,59 @@
         <h1>Ahmed ElShaikh</h1>
         <nav>
             <a href="#about">About</a>
-            <a href="#skills">skills</a>
+            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
-
             <button id="themeToggle">Toggle Theme</button>
         </nav>
     </header>
     <div class="container">
         <img src="your-photo.png" alt="Profile Picture" class="profile-pic">
 
-
         <section id="about">
             <h2>About Me</h2>
             <p>Hello, my name is Ahmed ElShaikh. I'm a recent MIS graduate (full-stack specialization) from the Egyptian
                 Russian University, currently working as a Marketing Specialist at CIC Car Importing. I'm passionate
-                about entrepreneurship, as demonstrated by my co-founding role in ERU's Entrepreneurship Club. I possess
-                a solid technical foundation with intermediate proficiency in C++, Java, Python, R, and web development,
-                including backend development expertise. I'm also a proactive learner, evidenced by my attendance at
-                DevFest '23, ECPC '23, and Cairo ICT '22.</p>
-
+                about entrepreneurship... [rest of your about text]</p>
         </section>
 
         <section id="skills">
             <h2>Skills</h2>
             <p>Skills Showcase:</p>
-
-            <p> Entrepreneurship/Leadership: Led a student entrepreneurship club, organizing events and mentoring
-                aspiring entrepreneurs, gaining teamwork, project management, and strategic thinking skills.</p>
-
-            <p>Technical Skills: Intermediate coding (C++, Java, Python, R, web dev), specializing in backend.</p>
-
-            <p>Marketing/Business: Marketing Specialist applying business skills and strategic thinking developed
-                through entrepreneurial activities.</p>
-            <p>HR/Analysis: Has HR and business analysis skills, rounding out a diverse skill set.</p>
-            <p>Learning: Stays current with tech trends by attending industry conferences.</p>
+            <ul>  
+                <li>Entrepreneurship/Leadership: Led a student entrepreneurship club, organizing events and mentoring
+                    aspiring entrepreneurs, gaining teamwork, project management, and strategic thinking skills</li>
+                <li>Technical Skills: Intermediate coding (C++, Java, Python, R, web dev), specializing in backend.</li>
+                <li>Marketing/Business: Marketing Specialist applying business skills and strategic thinking developed
+                    through entrepreneurial activities.</li>
+                <li>HR/Analysis: Has HR and business analysis skills, rounding out a diverse skill set.</li>
+                <li>Learning: Stays current with tech trends by attending industry conferences.</li>
+            </ul>
         </section>
 
         <section id="projects">
-            <p>"Through my involvement with ERU and courses taken outside, I've had the opportunity to work on various
-                projects focused on developing innovative solutions and supporting student ventures. These projects have
-                allowed me to hone my skills in project management, market analysis, team work and many other; and have
-                given me practical experience in bringing ideas from concept to execution."</p>
             <h2>Projects</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <img src="project.jpg" alt="Project ">
-                <p>This project manages core data like customers, cars, brands, and messages, likely using a MySQL
-                    database. It implements role-based access control (via PHP sessions) to manage user permissions. The
-                    user interface is built with Bootstrap, and PHP handles dynamic content and database interactions.
-                    The primary focus was back-end development with PHP and establishing a robust design system.</p>
-                <a href="https://lnkd.in/dCRM9whH">View Project</a>
-            </div>
+            <div class="projects-container"> 
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <img src="project.jpg" alt="Project 1">
+                    <p>This project manages core data...[rest of project description]</p>
+                    <a href="https://lnkd.in/dCRM9whH">View Project</a>
+                </div>
+            </div> 
+        </section>
 
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:214032@eru.edu.eg">214032@eru.edu.eg</a></p> 
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/ahmed-elshaikh-852b5b289/">LinkedIn</a></p>
+        </section>
 
-            <section id="contact">
-                <h2>Contact</h2>
-                <p>Email: 214032@eru.edu.eg</p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/ahmed-elshaikh-852b5b289/">LinkedIn</a></p>
-            </section>
-
-            <footer>
-                <p>Ahmed Elshaikh © MIS</p>
-            </footer>
-            <script src="script.js"></script>
+        <footer>
+            <p>Ahmed Elshaikh © MIS</p>
+        </footer>
+    </div> 
+    <script src="script.js"></script>
 </body>
 
 </html>
