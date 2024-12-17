@@ -1,12 +1,12 @@
 body {
-    font-family: 'Roboto', sans-serif; /* Use a modern font */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #1e1e1e; /* Darker background */
+    background-color: #1e1e1e;
     color: #eee;
     transition: background-color 0.3s ease, color 0.3s ease;
-    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    overflow-x: hidden; 
 }
 
 body[data-theme="light"] {
@@ -14,101 +14,112 @@ body[data-theme="light"] {
     color: #333;
 }
 
-.container { /* New container for centering */
+.container {
     display: flex;
-    flex-direction: column; /* Align items vertically */
-    align-items: center; /* Center horizontally */
-    min-height: 100vh; /* Ensure container takes up full viewport height */
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem; 
 }
 
 .profile-pic {
-    width: 150px;  /* Adjust size as needed */
-    height: 150px; /* Maintain aspect ratio */
-    border-radius: 50%; /* Make it circular */
-    object-fit: cover; /* Prevent image distortion */
-    margin-top: 2rem; /* Add some top margin */
-    border: 3px solid #bada55; /* Optional: Add a border */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 2rem;
+    border: 3px solid #bada55;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 
 header {
     background-color: #282828;
     color: #fff;
-    padding: 2rem 0;
+    padding: 1rem 0; 
     text-align: center;
 }
+
+nav {
+    display: flex;         
+    flex-wrap: wrap;    
+    justify-content: center; 
+}
+
 
 nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 1rem;
-    transition: color 0.3s ease; /* Add transition for hover effect */
+    margin: 0.5rem 1rem;  
+    transition: color 0.3s ease;
+    display: inline-block; 
+
 }
 
-nav a:hover {
-    color: #bada55; /* Example hover color */
-}
+
 
 section {
-    padding: 4rem 2rem; /* Increased padding */
+    padding: 2rem 1rem; 
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
 }
 
 .project {
-    margin-bottom: 3rem;
+    width: 90%; 
+    max-width: 300px;  
+    margin: 1rem;
     border: 1px solid #444;
-    padding: 2rem;
+    padding: 1rem;       
     background-color: #333;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
-    overflow: hidden; /* Hide overflowing content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
 }
+
 
 .project img {
     max-width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
     border-radius: 8px;
-    transition: transform 0.3s ease; /* Add transition for hover effect */
+    transition: transform 0.3s ease;
 }
 
-.project:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
-}
 
-.project img:hover {
-    transform: scale(1.05); /* Zoom slightly on hover */
-}
 
 footer {
     background-color: #282828;
     color: #fff;
     text-align: center;
-    padding: 2rem 0;
+    padding: 1rem 0;  
 }
 
 #themeToggle {
     background-color: #444;
     color: #eee;
     border: none;
-    padding: 0.8rem 1.5rem;
+    padding: 0.5rem 1rem;  
     cursor: pointer;
     border-radius: 5px;
-}
-.projects-container {
-    display: flex;
-    flex-wrap: wrap; /* Allow projects to wrap onto multiple lines */
-    justify-content: space-around; /* Distribute projects evenly */
+    margin: 0.5rem 1rem; 
 }
 
-.project {
-    width: 300px; /* Set a fixed width for the project cards */
-    margin: 1rem; /* Add some margin between cards */
-    /* ... other project styles ... */
-}
-
-.project img {
-    max-width: 100%;
-    height: 200px; /* Set a fixed height for the image */
-    object-fit: cover; /* Ensure image covers the entire area */
+@media (max-width: 768px) {
+    nav a {
+        margin: 0.5rem 0.5rem; 
+        font-size: 1em;
+    }
+    .project {
+        width: 100%; 
+        margin: 1rem 0;
+    }
 }
